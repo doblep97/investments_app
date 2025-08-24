@@ -16,14 +16,26 @@ const TableInvestments = ({ investments }) => {
       </Typography>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
-          <TableHead>
+          <TableHead sx={{ backgroundColor: "#e6f9fbff" }}>
             <TableRow>
-              <TableCell>Activo</TableCell>
-              <TableCell align="center">Categoría</TableCell>
-              <TableCell align="center">Cantidad invertida</TableCell>
-              <TableCell align="center">Valor actual</TableCell>
-              <TableCell align="center">Rendimiento</TableCell>
-              <TableCell align="center">Fecha de inversión</TableCell>
+              <TableCell align="center" sx={{ fontWeight: "bold" }}>
+                Activo
+              </TableCell>
+              <TableCell align="center" sx={{ fontWeight: "bold" }}>
+                Categoría
+              </TableCell>
+              <TableCell align="center" sx={{ fontWeight: "bold" }}>
+                Cantidad invertida
+              </TableCell>
+              <TableCell align="center" sx={{ fontWeight: "bold" }}>
+                Valor actual
+              </TableCell>
+              <TableCell align="center" sx={{ fontWeight: "bold" }}>
+                Rendimiento
+              </TableCell>
+              <TableCell align="center" sx={{ fontWeight: "bold" }}>
+                Fecha de inversión
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -32,7 +44,7 @@ const TableInvestments = ({ investments }) => {
                 key={inv.id}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
               >
-                <TableCell component="th" scope="row">
+                <TableCell align="center" component="th" scope="row">
                   {inv.name}
                 </TableCell>
                 <TableCell align="center">{inv.category}</TableCell>

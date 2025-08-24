@@ -16,8 +16,6 @@ const App = () => {
   const handleAddInvestment = (newInvestment) => {
     // Función que recibe el estado anterior, es decir, todas las inversiones que ya estaban
     // Creamos un nuevo array que copia todo lo que había (...previous) y añade al final la nueva inversión
-    // TODO Calcular tu rendimiento y obtienes ej: 233 -->
-    // newInvestment.rendimiento = 233
     const totalProfit = investments.reduce((acumulador, inv) => {
       let localProfit = Number(inv.profit);
       return acumulador + (isNaN(localProfit) ? 0 : localProfit);

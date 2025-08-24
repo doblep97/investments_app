@@ -129,8 +129,8 @@ const AddInvestmentForm = ({ onAddInvestment }) => {
               <MenuItem value={"ETFs"}>ETFs</MenuItem>
               <MenuItem value={"Bonos"}>Bonos</MenuItem>
               <MenuItem value={"Inmuebles"}>Inmuebles</MenuItem>
-              <MenuItem value={"Inmuebles"}>Cuenta remunerada</MenuItem>
-              <MenuItem value={"Inmuebles"}>Depósito bancario</MenuItem>
+              <MenuItem value={"Cuenta remunerada"}>Cuenta remunerada</MenuItem>
+              <MenuItem value={"Depósito bancario"}>Depósito bancario</MenuItem>
               <MenuItem value={"Otros"}>Otros</MenuItem>
             </Select>
             {formSubmitted && category === "" && (

@@ -25,7 +25,7 @@ const InvestmentsGraphic = ({ investments }) => {
           margin={{ top: 20, right: 10, left: -20, bottom: 0 }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="date" />
+          <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
           <Area
